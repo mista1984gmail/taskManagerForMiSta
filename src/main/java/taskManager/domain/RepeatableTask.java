@@ -17,4 +17,9 @@ public class RepeatableTask extends Task{
                 ", periodicity='" + periodicity + '\'' +
                 "} ";
     }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
