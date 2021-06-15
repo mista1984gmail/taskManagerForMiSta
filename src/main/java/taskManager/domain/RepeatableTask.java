@@ -1,8 +1,9 @@
 package taskManager.domain;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class RepeatableTask extends Task{
+public class RepeatableTask extends Task implements Serializable {
     private String periodicity;//периодичность задачи
 
     public RepeatableTask(String nameTask, String taskContent, Priority priority, Status status, LocalDateTime dateOfCreation, LocalDateTime dateOfDelivery, String periodicity) {

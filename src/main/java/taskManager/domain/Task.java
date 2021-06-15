@@ -1,8 +1,9 @@
 package taskManager.domain;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public abstract class Task implements Comparable{
+public abstract class Task implements Comparable, Serializable {
     private String nameTask; //имя задачи
     private String taskContent;//содержание задачи
     private Priority priority;//приоретет задачи

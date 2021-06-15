@@ -7,6 +7,11 @@
     <groupId>mista1984</groupId>
     <artifactId>taskManagerForMiSta</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <validation-api.version>2.0.1.Final</validation-api.version>
+        <jsr305.version>3.0.2</jsr305.version>
+        <logback-classic.version>1.2.3</logback-classic.version>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -19,6 +24,29 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${validation-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>${jsr305.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

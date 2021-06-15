@@ -1,12 +1,26 @@
 package taskManager.domain;
 
-public enum Priority {
+import java.io.Serializable;
+
+public enum Priority implements Serializable {
     HIGH(1,"high"),MIDDLE(2,"middle"),LOW(3,"low");
-    private int i;
-    private String name;
+    public int i;
+    public String name;
+
+    Priority(int i) {
+        this.i = i;
+    }
 
     Priority(int i, String name) {
         this.i = i;
+        this.name = name;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 

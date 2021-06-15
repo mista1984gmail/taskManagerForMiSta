@@ -1,6 +1,8 @@
 package taskManager.domain;
 
-public enum Status {
+import java.io.Serializable;
+
+public enum Status implements Serializable {
      APPOINTED, //назначена
      IN_PROCESS,//в процессе выполнения
     COMPLETED,//сдана
