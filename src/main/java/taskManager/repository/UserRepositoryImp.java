@@ -37,7 +37,7 @@ public class UserRepositoryImp implements UserRepository {
             return bd.executeGetAllOperation();
         }
     }
-
+    @Override
     public void deleteUser(int id) throws Exception {
         try (BD bd = BD.getInstance()) {
             bd.executeDeleteOperation(id);
